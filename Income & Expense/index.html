@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Income & Expense Program</title>
+</head>
+
+<body>
+    <h2>Incomes and Expenses Program</h2>
+    <div class="container">
+        <h4>Balance (THB)</h4>
+        <h1 id="balance">฿0.00</h1>
+        
+        <div class="income-expense-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">฿5000</p>
+            </div>
+
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money minus">฿200</p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+        <ul id="list" class="list">
+            <!-- <li class="minus">Fixed Car<span> -฿400</span>
+                <button class="delete-btn">X</button>
+            </li>
+            
+            <li class="plus">Salary<span> +฿40000</span>
+                <button class="delete-btn">X</button>
+            </li> -->
+            
+        </ul>
+
+        <h3>Add Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Item Name</label>
+                <input type="text" id="text" placeholder="Item Name">
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Amount <br>
+                    (+ Income , - Expense)
+                </label>
+                <input type="number" id="amount" placeholder="Amount">
+            </div>
+            <button class="btn">Add Transaction</button>
+        </form>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
