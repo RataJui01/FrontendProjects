@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+.container .side-bar{
+    background-color: #0ea5e9;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.side-bar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.side-bar .logo i{
+    font-size: 42px;
+}
+
+.side-bar .main-link{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+.side-bar .main-link a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.side-bar .other-link{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 70px;
+    gap: 15px;
+}
+
+.side-bar .other-link a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.top-main .search-bell-profile .bell-profile img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-content .top-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-main .search-bell-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.top-main .search-bell-profile .search-bar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-main .search-bell-profile .search-bar i{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-main .search-bell-profile .search-bar input{
+    background-color: #cbd5e1;
+    border: none;
+    border-radius: 100px;
+    height: 30px;
+    width: 700px;
+}
+
+.top-main .search-bell-profile .search-bar input{
+    padding: 20px;
+}
+
+.top-main .search-bell-profile .bell-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.top-main .search-bell-profile .bell-profile i{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-main .search-bell-profile .bell-profile p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top-main .feature .user-name img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.top-main .feature{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.top-main .feature .user-name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-main .feature .user-name p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-main .feature .user-name span{
+    font-size: 20px;
+}
+
+.top-main .feature .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-main .feature .buttons .btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0ea5e9;
+    color: #fff;
+    font-weight: 600;
+    width: 90px;
+    cursor: pointer;
+}
+
+.main-content .workspace{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    background-color: #e2e8f0;
+    padding: 25px 20px;
+}
+
+.main-content .workspace h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-content .workspace .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.main-content .workspace .items .card{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-content .workspace .items .card .side-tape{
+    background-color: #f7b500;
+    width: 8px; 
+    height: 100%; 
+    border-radius: 8px 0 0 8px; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-content .workspace .items .card .card-content{
+    margin-left: 16px;
+}
+
+.main-content .workspace .items .card .card-content h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.main-content .workspace .items .card .card-content p{
+    font-size: 14px;
+    color: #666;
+}
+
+.main-content .workspace .items .card .icons{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-right: 16px;
+}
+
+.main-content .workspace .items .card .icons a{
+    font-size: 20px;
+    color: #000;
+}
+
+.main-content .workspace .right-side .announcement{
+    background-color: #f7f7f7;
+    margin-top: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .workspace .right-side .announcement h5{
+    font-size: 14px;
+}
+
+.main-content .workspace .right-side .announcement p{
+    font-size: 12px;
+    color: #666;
+}
+
+hr{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.main-content .workspace .right-side .trending .trending-project img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.trending-part h4{
+    margin-top: 40px;
+}
+
+.main-content .workspace .right-side .trending{
+    background-color: #f7f7f7;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .workspace .right-side .trending .trending-project{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-content .workspace .right-side .trending .trending-project h5{
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.main-content .workspace .right-side .trending .trending-project p{
+    color: #666;
+    font-size: 13px;
+}
