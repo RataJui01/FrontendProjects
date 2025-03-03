@@ -62,3 +62,68 @@ ul.nav-links li:hover {
 .signup-btn:hover {
   background-color: #bba3e3;
 }
+
+.contents {
+  height: max-content;
+  width: 100%;
+  padding: 0px 100px 50px 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promote-word .subTitle {
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  font-size: 12px;
+  opacity: 80%;
+}
+
+.contents .title {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--tertiary-color);
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 15px 25px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #bba3e3;
+}
+
+.downloadIcon {
+  border-radius: 50%;
+  border: 3px solid #000000;
+  padding: 1px;
+  display: flex;
+  background-color: var(--tertiary-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadIcon i {
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contents img {
+  width: 40%;
+}
