@@ -230,6 +230,14 @@ ul.nav-links li:hover {
     display: none;
   }
 
+  .contents .title {
+    font-size: 36px;
+  }
+
+  .promote-word .subTitle {
+    font-size: 8px;
+  }
+
   ul.nav-links {
     background: #000000;
     position: fixed;
@@ -330,6 +338,19 @@ ul.nav-links li:hover {
   }
 
   .contents {
+    align-items: start;
     flex-direction: column;
+    gap: 50px;
+  }
+
+  .contents img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .contents img {
+    width: 130vw;
   }
 }
