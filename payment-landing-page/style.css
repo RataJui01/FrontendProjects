@@ -245,6 +245,7 @@ ul.nav-links li:hover {
     display: none;
     padding: min(30vh, 5rem) 2em;
     inset: 0 0 0 20%;
+    transition: all 0.3s ease;
   }
 
   .menuBtn {
@@ -284,7 +285,7 @@ ul.nav-links li:hover {
     border: none;
     /* border-radius: 50%; */
     display: block;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 40px;
     right: 2em;
@@ -305,9 +306,9 @@ ul.nav-links li:hover {
     background-color: rgba(210, 80, 80, 0.5);
   }
 
-  .hideNavBar {
+  /* .hideNavBar {
     display: none;
-  }
+  } */
 
   ul.nav-links li {
     font-size: 16px;
