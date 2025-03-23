@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Fahkwang", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --normal-font: 14px;
+  --big-font: 20px;
+  --small-font: 12px;
+}
+
+.thammasat_Logo {
+  width: 90px;
+  height: 90px;
+}
+
+nav {
+  width: 100%;
+  height: 110px;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 5px -2px;
+}
+
+.logo_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a51931;
+  z-index: 999999;
+  height: 190%;
+  padding: 5px 15px;
+}
+
+.logo_SubContainer {
+  position: relative;
+  top: 25px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_SubContainer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+ul.nav_Menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+ul.nav_Menu li {
+  font-size: var(--normal-font);
+  color: #a51931;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ul.nav_Menu li:hover {
+  color: #000000;
+}
+
+ul.nav_Menu li i {
+  font-size: var(--normal-font);
+  margin-left: 5px;
+}
+
+.language_Switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fcb66a;
+  list-style: none;
+  width: 102px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.th_Lang a {
+  margin-left: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 36px;
+  width: 48px;
+  height: 36px;
+  border-radius: 50rem;
+}
+
+.eng_Lang a {
+  margin-right: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 36px;
+  width: 48px;
+  height: 36px;
+  border-radius: 50rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-container input {
+  display: none;
+}
+
+/* Drop down 1 */
+
+.dropDown1 {
+  position: relative;
+  top: -30px;
+  left: 220px;
+  background-color: #000000;
+  width: max-content;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.dropDown1_Link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dropDown1 li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropDown1 li:hover {
+  background-color: #21262c;
+}
+
+.dropDown1 li a {
+  font-size: var(--normal-font);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Drop Down 2 */
+.dropDown2 {
+  position: relative;
+  top: -30px;
+  left: 440px;
+  background-color: #000000;
+  width: max-content;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.dropDown2_Link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dropDown2 li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropDown2 li:hover {
+  background-color: #21262c;
+}
+
+.dropDown2 li a {
+  font-size: var(--normal-font);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Drop Down 3 */
+.dropDown3 {
+  position: relative;
+  top: -30px;
+  left: 600px;
+  background-color: #000000;
+  width: max-content;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.dropDown3_Link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dropDown3 li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropDown3 li:hover {
+  background-color: #21262c;
+}
+
+.dropDown3 li a {
+  font-size: var(--normal-font);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Drop Down 4 */
+.dropDown4 {
+  position: relative;
+  top: -30px;
+  left: 705px;
+  background-color: #000000;
+  width: max-content;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.dropDown4_Link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dropDown4 li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropDown4 li:hover {
+  background-color: #21262c;
+}
+
+.dropDown4 li a {
+  font-size: var(--normal-font);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Drop Down 5 */
+.dropDown5 {
+  position: relative;
+  top: -30px;
+  left: 570px;
+  background-color: #000000;
+  width: max-content;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.dropDown5_Link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dropDown5 li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropDown5 li:hover {
+  background-color: #21262c;
+}
+
+.dropDown5 li a {
+  font-size: var(--normal-font);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mainContent {
+  display: flex;
+}
+
+.loginSide {
+  width: 400px;
+  height: 100vh;
+  background: linear-gradient(#7c0a02 57%, #b22222 95%);
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  height: max-content;
+  /* border: 1px solid #000000; */
+  position: absolute;
+  top: 270px;
+  gap: 10px;
+}
+
+.loginHeader {
+  font-size: 25px;
+  color: #fff4e0;
+  margin-bottom: 20px;
+}
+
+.usernameForm,
+.passwordForm {
+  /* border: 1px solid #000000; */
+  height: 55px;
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fae3d7;
+  margin-bottom: 10px;
+}
+
+.usernameForm i,
+.passwordForm i {
+  margin-left: 15px;
+  font-size: 25px;
+  color: #b22222;
+}
+
+.usernameForm input,
+.passwordForm input {
+  border-radius: 16px;
+  height: 55px;
+  width: 300px;
+  border: none;
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+.usernameForm input::placeholder,
+.passwordForm input::placeholder {
+  color: #1d1212;
+}
+
+.usernameForm input:focus,
+.passwordForm input:focus {
+  outline: none;
+}
+
+.loginChangePassBtn {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #000000; */
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.loginbtn,
+.changePassbtn {
+  width: 145px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.loginbtn {
+  background-color: #ffc340;
+}
+
+.loginContactText {
+  text-align: center;
+  color: #fff4e0;
+  font-size: var(--small-font);
+}
+
+.loginContactText span a {
+  color: #f1bc31;
+}
+
+.pictureSide {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictureSide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
