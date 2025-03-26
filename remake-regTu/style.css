@@ -10,7 +10,7 @@
 
 :root {
   --normal-font: 14px;
-  --big-font: 20px;
+  --big-font: 40px;
   --small-font: 12px;
 }
 
@@ -132,9 +132,11 @@ ul.nav_Menu li i {
 /* Drop down 1 */
 
 .dropDown1 {
-  position: relative;
-  top: -30px;
-  left: 220px;
+  z-index: 9999;
+  position: absolute;
+  z-index: 9999;
+  top: 80px;
+  left: 212px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -167,9 +169,10 @@ ul.nav_Menu li i {
 
 /* Drop Down 2 */
 .dropDown2 {
-  position: relative;
-  top: -30px;
-  left: 440px;
+  z-index: 9999;
+  position: absolute;
+  top: 80px;
+  left: 435px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -202,9 +205,10 @@ ul.nav_Menu li i {
 
 /* Drop Down 3 */
 .dropDown3 {
-  position: relative;
-  top: -30px;
-  left: 600px;
+  z-index: 9999;
+  position: absolute;
+  top: 80px;
+  left: 590px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -237,9 +241,10 @@ ul.nav_Menu li i {
 
 /* Drop Down 4 */
 .dropDown4 {
-  position: relative;
-  top: -30px;
-  left: 705px;
+  z-index: 9999;
+  position: absolute;
+  top: 80px;
+  left: 695px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -272,9 +277,10 @@ ul.nav_Menu li i {
 
 /* Drop Down 5 */
 .dropDown5 {
-  position: relative;
-  top: -30px;
-  left: 570px;
+  z-index: 9999;
+  position: absolute; /* Change from relative to absolute */
+  top: 80px; /* Adjust as needed to position it correctly */
+  left: 600px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -311,6 +317,7 @@ ul.nav_Menu li i {
 
 .loginSide {
   width: 400px;
+  flex-shrink: 0; /* Prevent shrinking */
   height: 100vh;
   background: linear-gradient(#7c0a02 57%, #b22222 95%);
   display: flex;
@@ -318,6 +325,7 @@ ul.nav_Menu li i {
 }
 
 .login {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,10 +420,152 @@ ul.nav_Menu li i {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Ensure sliding stays within bounds */
+  position: relative; /* For positioning images absolutely */
 }
 
 .pictureSide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute; /* Stack images on top of each other */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+.newsPage {
+  padding: 70px 50px;
+}
+
+.newsTopSection {
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsTopSection h1 {
+  font-size: var(--big-font);
+}
+
+.moreNews {
+  font-size: var(--normal-font);
+  background-color: #ffc340;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.moreNews:hover {
+  background-color: #ffae00;
+}
+
+.newsContents {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  /* border: 1px solid #000000; */
+}
+
+.newsLeftSide {
+  flex: 1;
+  /* border: 1px solid #000000; */
+}
+
+.newsRightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  /* border: 1px solid #000000; */
+}
+
+.newsLeftSide img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.news1Title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.news1Date {
+  font-size: var(--small-font);
+  color: #989797;
+  margin-bottom: 15px;
+}
+
+.news1Content {
+  font-size: var(--normal-font);
+}
+
+.news2Container,
+.news3Container,
+.news4Container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+
+.news2Text,
+.news3Text,
+.news4Text {
+  flex: 1;
+}
+
+a.news2Title,
+a.news3Title,
+a.news4Title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: block;
+  color: #000000;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.news2Title:hover,
+.news3Title:hover,
+.news4Title:hover {
+  color: #a51931;
+}
+
+.news2Date,
+.news3Date,
+.news4Date {
+  font-size: var(--small-font);
+  color: #989797;
+}
+
+.news2Container img,
+.news3Container img,
+.news4Container img {
+  width: 40%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.quoteContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7c0a02;
+  width: 100%;
+  height: 20vh;
+}
+
+.quote {
+  font-size: 25px;
+  color: #fcb66a;
+  text-align: center;
 }
