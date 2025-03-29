@@ -438,7 +438,7 @@ ul.nav_Menu li i {
 
 .newsTopSection {
   /* border: 1px solid black; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -568,4 +568,199 @@ a.news4Title {
   font-size: 25px;
   color: #fcb66a;
   text-align: center;
+}
+
+/* Reference Page */
+.referencePage {
+  padding: 70px 50px;
+}
+
+.referencePageTitle {
+  font-size: var(--big-font);
+  margin-bottom: 40px;
+}
+
+.referencePageContents {
+  display: flex;
+  /* border: 1px solid #000000; */
+}
+
+.referencePageLeftSide {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.announcement {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+.announcementHeader,
+.downloadHeader,
+.userManualHeader,
+.regulationAndRulesHeader {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.separateLine {
+  height: 3px;
+  width: 60%;
+  margin-bottom: 20px;
+  background-color: #d9d9d9;
+}
+
+.announementLinksContainer,
+.downloadLinksContainer,
+.userManualLinksContainer,
+.regulationAndRulesLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.announementLinksContainer,
+.userManualLinksContainer {
+  margin-bottom: 25px;
+}
+
+.announcementLink1,
+.downloadLinksContainer a,
+.userManualLinksContainer a,
+.regulationAndRulesLinksContainer a {
+  width: fit-content;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  /* border: 1px solid orange; */
+}
+
+.downloadLinksContainer a,
+.userManualLinksContainer a,
+.regulationAndRulesLinksContainer a {
+  margin-bottom: 10px;
+}
+
+.downloadLinksContainer a:last-child,
+.userManualLinksContainer a:last-child,
+.regulationAndRulesLinksContainer a:last-child {
+  margin-bottom: 0;
+}
+
+.announcementLink1:hover,
+.downloadLinksContainer a:hover,
+.userManualLinksContainer a:hover,
+.regulationAndRulesLinksContainer a:hover {
+  color: #f61138;
+}
+
+.referencePageRightSide {
+  flex: 1;
+}
+
+.footer {
+  padding: 70px 50px;
+  background-color: #000000;
+}
+
+.universityName {
+  color: #ffffff;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.universityNameFirstWord {
+  color: #ff274c;
+}
+
+.universityNameSecondWord {
+  color: #fcb66a;
+}
+
+.campusLocationContainer {
+  /* border: 1px solid #000000; */
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.rangsitCampus {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.rangsitCampusHeaderContainer,
+.thaPrachanCampusHeaderContainer {
+  /* border: 1px solid green; */
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.rangsitCampusHeader,
+.thaPrachanCampusHeader {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rangsitCampusLine,
+.thaPrachanCampusLine {
+  width: 60%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.rangsitCampusLocation,
+.thaPrachanCampusLocation {
+  color: #ffffff;
+  font-size: var(--normal-font);
+  line-height: 1.5;
+}
+
+.thaPrachanCampus {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.socialMedia a {
+  /* border: 1px solid #000000; */
+  color: #ffffff;
+  font-size: var(--big-font);
+  transition: color 0.3s ease;
+  text-decoration: none;
+  &:nth-child(-n + 2) {
+    margin-right: 5px;
+  }
+}
+
+.socialMedia a:hover {
+  color: #ffc340;
+}
+
+.copyright {
+  /* border: 1px solid #000000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrightContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+
+.universityLogo {
+  width: 8%;
+  height: 8%;
+  /* border: 1px solid green; */
+}
+
+.copyrightText {
+  color: #ffffff;
+  font-size: var(--small-font);
 }
