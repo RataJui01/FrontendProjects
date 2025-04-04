@@ -18,11 +18,11 @@
   width: 90px;
   height: 90px;
 }
-
 nav {
   width: 100%;
   height: 110px;
   /* background-color: gray; */
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +31,7 @@ nav {
 }
 
 .logo_Container {
+  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +39,7 @@ nav {
   z-index: 999999;
   height: 190%;
   padding: 5px 15px;
+  margin-right: 10px;
 }
 
 .logo_SubContainer {
@@ -56,9 +58,12 @@ nav {
 }
 
 ul.nav_Menu {
+  border: 1px solid orange;
   display: flex;
+  width: 90%;
+  justify-content: space-between;
   list-style: none;
-  gap: 30px;
+  /* gap: 10px; */
 }
 
 ul.nav_Menu li {
@@ -66,6 +71,7 @@ ul.nav_Menu li {
   color: #a51931;
   cursor: pointer;
   transition: color 0.3s ease;
+  border: 1px solid pink;
 }
 
 ul.nav_Menu li:hover {
@@ -78,6 +84,19 @@ ul.nav_Menu li i {
 }
 
 .language_Switcher {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.thLang,
+.engLang {
+  width: 30px;
+  height: 100%;
+  border: 1px solid darkblue;
+}
+
+/* .language_Switcher {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,15 +138,15 @@ ul.nav_Menu li i {
   width: 48px;
   height: 36px;
   border-radius: 50rem;
-}
+} */
 
 .hidden {
   display: none;
 }
 
-.toggle-container input {
+/* .toggle-container input {
   display: none;
-}
+} */
 
 /* Drop down 1 */
 
@@ -136,7 +155,7 @@ ul.nav_Menu li i {
   position: absolute;
   z-index: 9999;
   top: 80px;
-  left: 212px;
+  left: 190px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -172,7 +191,7 @@ ul.nav_Menu li i {
   z-index: 9999;
   position: absolute;
   top: 80px;
-  left: 435px;
+  left: 425px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
@@ -244,7 +263,7 @@ ul.nav_Menu li i {
   z-index: 9999;
   position: absolute;
   top: 80px;
-  left: 695px;
+  left: 710px;
   background-color: #000000;
   width: max-content;
   padding: 20px;
