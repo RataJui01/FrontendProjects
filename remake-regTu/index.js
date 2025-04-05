@@ -3,11 +3,11 @@ const menu4 = document.querySelector(".menu4");
 const menu3 = document.querySelector(".menu3");
 const menu2 = document.querySelector(".menu2");
 const menu1 = document.querySelector(".menu1");
-const dropDown5 = document.querySelector(".dropDown5");
-const dropDown4 = document.querySelector(".dropDown4");
-const dropDown3 = document.querySelector(".dropDown3");
-const dropDown2 = document.querySelector(".dropDown2");
-const dropDown1 = document.querySelector(".dropDown1");
+const dropdownLink1 = document.querySelector(".dropdownLink1");
+const dropdownLink2 = document.querySelector(".dropdownLink2");
+const dropdownLink3 = document.querySelector(".dropdownLink3");
+const dropdownLink4 = document.querySelector(".dropdownLink4");
+const dropdownLink5 = document.querySelector(".dropdownLink5");
 let sliderImage = document.querySelector(".sliderImage");
 
 const LoginPageImageArr = [
@@ -19,20 +19,24 @@ const LoginPageImageArr = [
 ];
 
 const menuArray = [menu1, menu2, menu3, menu4, menu5];
-const dropdownArray = [dropDown1, dropDown2, dropDown3, dropDown4, dropDown5];
+const dropdownArray = [
+  dropdownLink1,
+  dropdownLink2,
+  dropdownLink3,
+  dropdownLink4,
+  dropdownLink5,
+];
 
-// Add Click Event to Menu
-menuArray.forEach(function (menu) {
+menuArray.forEach((menu, index) => {
   menu.addEventListener("click", function () {
-    dropdownArray.forEach(function (dropDown) {
-      if (
-        !dropDown.classList.contains("hidden") &&
-        dropDown !== dropdownArray[menuArray.indexOf(menu)]
-      ) {
-        dropDown.classList.add("hidden");
+    dropdownArray[index].style.display =
+      dropdownArray[index].style.display === "block" ? "none" : "block";
+
+    dropdownArray.forEach((dropdown, dropdownIndex) => {
+      if (dropdownIndex !== index && dropdown.style.display === "block") {
+        dropdown.style.display = "none";
       }
     });
-    dropdownArray[menuArray.indexOf(menu)].classList.toggle("hidden");
   });
 });
 
