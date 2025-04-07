@@ -8,6 +8,9 @@ const dropdownLink2 = document.querySelector(".dropdownLink2");
 const dropdownLink3 = document.querySelector(".dropdownLink3");
 const dropdownLink4 = document.querySelector(".dropdownLink4");
 const dropdownLink5 = document.querySelector(".dropdownLink5");
+const hamburgerMenu = document.querySelector(".hamburgerMenu");
+const closeBtn = document.querySelector(".closeBtn");
+const navMenu = document.querySelector(".navMenu");
 let sliderImage = document.querySelector(".sliderImage");
 
 const LoginPageImageArr = [
@@ -40,7 +43,19 @@ menuArray.forEach((menu, index) => {
   });
 });
 
-// Change Image
+//Show Side-bar function
+const showSidebar = function () {
+  navMenu.classList.remove("hideSideBar");
+  navMenu.classList.add("showSideBar");
+};
+
+//Hide Side-bar function
+const hideSidebar = function () {
+  navMenu.classList.remove("showSideBar");
+  navMenu.classList.add("hideSideBar");
+};
+
+// Change Image function
 const changeImage = function () {
   let i = 1;
   let nextImage = document.createElement("img");
@@ -74,3 +89,16 @@ const changeImage = function () {
 };
 
 changeImage();
+
+window.addEventListener("resize", function () {
+  let windowWidth = this.window.innerWidth;
+  if (windowWidth > 900) hideSidebar();
+});
+
+hamburgerMenu.addEventListener("click", function () {
+  showSidebar();
+});
+
+closeBtn.addEventListener("click", function () {
+  hideSidebar();
+});

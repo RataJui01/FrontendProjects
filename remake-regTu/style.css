@@ -22,18 +22,15 @@
 nav {
   width: 100%;
   height: 110px;
-  /* background-color: gray; */
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   gap: 30px;
   align-items: center;
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 5px -2px;
 }
 
 .logo_Container {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +42,7 @@ nav {
 }
 
 .logo_SubContainer {
+  /* border: 1px solid lightblue; */
   position: relative;
   top: 25px;
   gap: 8px;
@@ -61,10 +59,8 @@ nav {
 
 .navMenu {
   display: flex;
-  /* width: 100%; */
   gap: 40px;
   justify-content: space-between;
-  border: 1px solid #b22222;
   list-style: none;
 }
 
@@ -75,8 +71,7 @@ nav {
 .menu5 {
   display: flex;
   flex-direction: column;
-  /* background-color: #fcb66a; */
-  position: relative; /* Ensure dropdown is positioned relative to this element */
+  position: relative;
 }
 
 .hasChild {
@@ -97,17 +92,17 @@ nav {
 .dropdownLink4 {
   width: max-content;
   list-style: none;
-  /* z-index: 9999; */
   display: none;
   position: absolute;
   top: 100%; /* Position below the menu */
   left: 0;
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
-  /* border-radius: 8px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000;
+  /* transition: all 0.3s ease; */
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .dropdownLink5 {
@@ -122,6 +117,18 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropdownLink1 li,
@@ -152,33 +159,6 @@ nav {
   font-size: var(--small-font);
 }
 
-/*
-ul.nav_Menu {
-  border: 1px solid orange;
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  list-style: none;
-}
-
-ul.nav_Menu li {
-  font-size: var(--normal-font);
-  color: #a51931;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  border: 1px solid pink;
-}
-
-ul.nav_Menu li:hover {
-  color: #000000;
-}
-
-ul.nav_Menu li i {
-  font-size: var(--normal-font);
-  margin-left: 5px;
-}
-*/
-
 .language_Switcher {
   display: flex;
   gap: 5px;
@@ -189,10 +169,11 @@ ul.nav_Menu li i {
 .engLang {
   width: 30px;
   height: 100%;
-  border: 1px solid darkblue;
+  /* border: 1px solid darkblue; */
 }
 
-.hidden {
+.hamburgerMenu,
+.closeBtn {
   display: none;
 }
 
@@ -218,7 +199,7 @@ ul.nav_Menu li i {
   height: max-content;
   /* border: 1px solid #000000; */
   position: absolute;
-  top: 270px;
+  top: 300px;
   gap: 10px;
 }
 
@@ -656,6 +637,59 @@ a.news4Title {
   font-size: var(--small-font);
 }
 
+@media (max-width: 1240px) {
+  nav {
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .navMenu {
+    gap: 30px;
+  }
+
+  .hasChild {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1095px) {
+  /* NavigationBar */
+  .thammasat_Logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo_Container {
+    padding: 5px 10px;
+    margin-right: 0px;
+  }
+
+  .logo_SubContainer p {
+    font-size: 13px;
+  }
+
+  nav {
+    padding: 0 20px 0 20px;
+    justify-content: space-around;
+  }
+
+  .navMenu {
+    gap: 20px;
+  }
+
+  .hasChild {
+    font-size: 11px;
+  }
+
+  .dropdownLink1 li a,
+  .dropdownLink2 li a,
+  .dropdownLink3 li a,
+  .dropdownLink4 li a,
+  .dropdownLink5 li a {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 1000px) {
   /* newsPages */
   a.news2Title,
@@ -674,6 +708,123 @@ a.news4Title {
   .userManualLinksContainer a,
   .regulationAndRulesLinksContainer a {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 0 50px;
+    justify-content: space-between;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    /* border: 1px solid #000000; */
+    transition: all 0.3s ease;
+  }
+
+  .hamburgerMenu:hover {
+    background-color: #fcb66a;
+  }
+
+  .hamburgerMenu i {
+    font-size: 30px;
+  }
+
+  /* Still have a problem */
+  .showSideBar {
+    transform: translateX(0);
+  }
+
+  .hideSideBar {
+    transform: translateX(1000px);
+  }
+
+  .navMenu {
+    transition: all 0.8s ease;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 40%;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 9999;
+    padding: 20px;
+    background-color: orange;
+    overflow: scroll;
+  }
+
+  .dropdownLink1,
+  .dropdownLink2,
+  .dropdownLink3,
+  .dropdownLink4,
+  .dropdownLink5 {
+    position: static;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .hasChild {
+    font-size: 16px;
+  }
+
+  .menu1 {
+    margin-top: 40px;
+  }
+
+  .closeBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+    /* border: 1px solid lightsteelblue; */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .closeBtn:hover {
+    background-color: lightgrey;
+  }
+
+  .closeBtn i {
+    font-size: 30px;
+  }
+
+  .loginSide {
+    width: 40%;
+  }
+
+  .login {
+    width: inherit;
+    top: 300px;
+    gap: 10px;
+  }
+
+  .loginHeader {
+    font-size: 20px;
+  }
+
+  .usernameForm,
+  .passwordForm {
+    width: 80%;
+  }
+
+  .loginChangePassBtn {
+    width: 80%;
+    gap: 10px;
+  }
+
+  .loginbtn,
+  .changePassbtn {
+    font-size: var(--small-font);
   }
 }
 
@@ -714,6 +865,10 @@ a.news4Title {
 }
 
 @media (max-width: 810px) {
+  .navMenu {
+    width: 60%;
+  }
+
   .newsContents {
     flex-direction: column;
   }
@@ -781,7 +936,23 @@ a.news4Title {
   }
 }
 
+@media (max-width: 700px) {
+  .login {
+    top: 280px;
+  }
+
+  .loginbtn,
+  .changePassbtn {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 640px) {
+  .navMenu {
+    width: 70%;
+    z-index: 999999;
+  }
+
   /* quote */
   .quoteContainer {
     height: 15vh;
@@ -815,6 +986,14 @@ a.news4Title {
 
   .socialMedia a {
     font-size: 23px;
+  }
+
+  .loginSide {
+    width: 100%;
+  }
+
+  .login {
+    width: max-content;
   }
 }
 
@@ -875,6 +1054,17 @@ a.news4Title {
   .news3Container img,
   .news4Container img {
     width: 100%;
-    /* height: 100%; */
+  }
+}
+
+@media (max-width: 400px) {
+  .login {
+    width: inherit;
+  }
+}
+
+@media (max-width: 370px) {
+  .navMenu {
+    width: 100%;
   }
 }
