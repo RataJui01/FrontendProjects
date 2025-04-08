@@ -10,6 +10,7 @@ const dropdownLink4 = document.querySelector(".dropdownLink4");
 const dropdownLink5 = document.querySelector(".dropdownLink5");
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const engLang = document.querySelector(".engLang");
+const thLang = document.querySelector(".thLang");
 const closeBtn = document.querySelector(".closeBtn");
 const navMenu = document.querySelector(".navMenu");
 let sliderImage = document.querySelector(".sliderImage");
@@ -66,7 +67,7 @@ const changeImage = function () {
 
   setInterval(function () {
     const currentImage = sliderImage;
-    nextImage.src = `assets/${LoginPageImageArr[i]}.jpg`;
+    nextImage.src = `../assets/${LoginPageImageArr[i]}.jpg`;
 
     // Slide current image out to the left
     currentImage.style.transform = "translateX(-100%)";
@@ -104,7 +105,6 @@ closeBtn.addEventListener("click", function () {
   hideSidebar();
 });
 
-engLang.addEventListener("click", function () {
-  // console.log(this.dataset.value, this);
+thLang.addEventListener("click", function () {
   window.location.href = this.dataset.value + "index.html";
 });

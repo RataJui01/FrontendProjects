@@ -169,6 +169,7 @@ nav {
 .engLang {
   width: 30px;
   height: 100%;
+  cursor: pointer;
   /* border: 1px solid darkblue; */
 }
 
