@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PosAndInventoryManagement</title>
+  </head>
+  <body>
+    <nav>
+      <div class="shopNameAndImg">
+        <img src="assets/shopImg.jpg" alt="shopLogo" class="shopLogo" />
+        <h1 class="shopName">Prasitwat</h1>
+      </div>
+
+      <div class="searchContainer">
+        <i class="bx bx-search"></i>
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Search here"
+        />
+      </div>
+
+      <button class="yourCartBtn">
+        <div class="yourCartBtnContainer">
+          <p class="yourCartText">Your Cart</p>
+          <div class="numOfItemContainer">
+            <p>1</p>
+          </div>
+        </div>
+      </button>
+    </nav>
+
+    <div class="content">
+      <div class="sideBarContainer">
+        <h2 class="categoryHeader">Category</h2>
+        <ul class="categoryLinks">
+          <li><i class="bx bxs-fridge"></i><a href="#">Drinks</a></li>
+          <li><i class="bx bxs-cookie"></i><a href="#">Snacks</a></li>
+          <li><i class="bx bxs-store"></i><a href="#">Household items</a></li>
+          <li><i class="bx bxs-baguette"></i><a href="#">Dry food</a></li>
+          <li><i class="bx bxs-beer"></i><a href="#">Alcohol</a></li>
+          <li><i class="bx bxs-paint"></i><a href="#">Cigarettes</a></li>
+          <li><i class="bx bxs-capsule"></i><a href="#">Medicine</a></li>
+          <li>
+            <i class="bx bxs-battery-charging"></i><a href="#">Electronic</a>
+          </li>
+        </ul>
+
+        <h2 class="settingsHeader">Settings</h2>
+        <ul class="settingLinks">
+          <li>
+            <i class="bx bx-edit"></i><a href="#">Checking & Updating Stock</a>
+          </li>
+          <li><i class="bx bx-upload"></i><a href="#">Add New Items</a></li>
+        </ul>
+      </div>
+
+      <div class="itemListContainer">
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/dutchMilkKids.png" alt="Dutch Milk Kids" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Dutch Mill Kids</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$30</p>
+              <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div>
+              <!-- <div class="addBtn"><i class="bx bx-plus"></i></div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/ดีน่างาดำ.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Dna Sesame</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$35</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremostChoc.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Choc Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/cokePack.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Coca Cola Can</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/singhaLemonSoda.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Singha Lemon Soda</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$45</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img
+              src="./assets/singhaRedLemonSoda.png"
+              alt="Foremost Plain Milk"
+            />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Singha Red Lemon Soda</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$45</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/vitamilk.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Vitamilk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemList">
+          <div class="imgContainer">
+            <img src="./assets/foremost.png" alt="Foremost Plain Milk" />
+          </div>
+
+          <div class="itemDescription">
+            <h3 class="itemName">Foremost Plain Milk</h3>
+            <p class="showStock">Amount : <span>100</span> packs</p>
+            <div class="price_addItemContainer">
+              <p class="itemPrice">$40</p>
+              <!-- <div class="add_removeContainer">
+                <div class="removeItem"><i class="bx bx-minus"></i></div>
+                <div class="amountOfItem"><p>5</p></div>
+                <div class="addItem"><i class="bx bx-plus"></i></div>
+              </div> -->
+              <div class="addBtn"><i class="bx bx-plus"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
