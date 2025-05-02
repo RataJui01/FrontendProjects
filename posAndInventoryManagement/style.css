@@ -122,6 +122,13 @@ nav {
   width: 25%;
   height: 100%;
   background-color: #212a3e;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.sideBarContainer::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 .categoryHeader,
@@ -173,12 +180,18 @@ nav {
 .itemListContainer {
   display: grid;
   overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   width: 75%;
   height: 80vh;
   padding: 40px;
+}
+
+.itemListContainer::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 .itemList {
