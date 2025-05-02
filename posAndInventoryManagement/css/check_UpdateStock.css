@@ -43,10 +43,15 @@ body {
   border-radius: 12px;
   background-color: #394867;
   border: 1px solid #394867;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .categoryContainer li:hover {
+  background-color: #dde6ed;
+  color: #394867;
+}
+
+li.clickCategoryContainer {
   background-color: #dde6ed;
   color: #394867;
 }
